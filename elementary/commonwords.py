@@ -7,5 +7,5 @@ def checkio(first, second):
         if x in second:
             words.append(x)
     for y in sorted(words):
-        res += (','+y if y != words[0] else y)
+        res += (','+y if y != sorted(words)[0] else y)
     return res
