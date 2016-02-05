@@ -1,6 +1,1 @@
-def checkio(data):
-    dat = data
-    for x in dat:
-        if dat.count(x) == 1:
-            dat.remove(x)
-    return dat
+checkio = lambda a: [x for x in a if a.count(x) > 1]
